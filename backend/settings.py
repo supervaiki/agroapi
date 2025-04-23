@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-zl6=raa$xckx^#fxy22^=4dflntp==zzj7(vut8%ebfk4%e2_c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["agroapi-qwvb.onrender.com","127.0.0.1","localhost"]
 
 
 # Application definition
