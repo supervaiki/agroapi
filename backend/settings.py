@@ -140,7 +140,9 @@ STORAGES = {
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
-    ' http://localhost:5173',  # C'est l'URL par défaut pour React en mode développement
+    ' http://localhost:5173', 
+    'https://agromarket-3rdp.onrender.com'
+     # C'est l'URL par défaut pour React en mode développement
 ]
 REST_FRAMEWORK = {
     
