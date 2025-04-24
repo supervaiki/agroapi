@@ -129,12 +129,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / "staticfiles"
-STORAGES = {
-    # ...
-    "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-    },
-}
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
@@ -173,5 +168,18 @@ JAZZMIN_SETTINGS = {
     ],
                     # Active l'éditeur d'interface
 }
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+# Configuration du stockage des fichiers
+STORAGES = {
+    "default": {  # Pour les fichiers média (uploads)
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {  # Pour les fichiers statiques (CSS, JS)
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
+
+# Configuration des fichiers média
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
