@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-zl6=raa$xckx^#fxy22^=4dflntp==zzj7(vut8%ebfk4%e2_c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["agroapi-qwvb.onrender.com","127.0.0.1","localhost"]
+ALLOWED_HOSTS = ["agroapi-qwvb.onrender.com","127.0.0.1","localhost","agromarket.igotech-pro.com"]
 
 
 # Application definition
@@ -137,6 +137,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
     ' http://localhost:5173', 
     'https://agromarket-3rdp.onrender.com'
+    'https://agromarket.igotech-pro.com'
      # C'est l'URL par défaut pour React en mode développement
 ]
 REST_FRAMEWORK = {
